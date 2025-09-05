@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fenrir</title>
+</head>
+<body>
+    <p>HEY THIS IS FENRIR</p>
+    {% for name in data %}
+        <p>{{ name }}</p>
+    {% endfor %}
+
+    <p># ENVIRONMENT VARIABLES</p>
+    {% for key, value in env.items() %}
+        <p>{{ key }}: {{ value }}</p>
+    {% endfor %}
+</body>
+<style>
+    body {
+        background-color: #000000;
+        color: yellow;
+    }
+</style>
+</html>
