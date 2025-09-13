@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__, template_folder="templates")
 
 PORT = int(os.environ.get("PORT", 9000))
-BACKEND_URL = os.environ.get("BACKEND_URL", "http://localhost:8000")
+BACKEND_URL = os.environ.get("BACKEND_URL", "http://localhost:5000")
 
 
 @app.route("/")
